@@ -96,7 +96,7 @@ pre {
     position: relative;
     z-index: 2;
     height: calc(100% - 26px);
-    overflow: hidden;
+    overflow: auto;
 }
 
 .stdin {
@@ -136,3 +136,9 @@ pre {
         opacity: 0;
     }
 }
+
+@media only screen and (max-width: 1025px) {
+    pre {
+      display: none;
+    }
+  }
